@@ -1,0 +1,107 @@
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Header styling */
+body .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header title styling */
+body .header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Main content styling */
+body main .content {
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Content title styling */
+body main .content h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+/* Content paragraph styling */
+body main .content p {
+    line-height: 1.6;
+}
+
+/* Footer styling */
+body .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer paragraph styling */
+body .footer p {
+    margin: 0;
+}
+
+/* Form styling */
+body main .content form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input field styling */
+body main .content form input[type="text"], 
+body main .content form input[type="email"], 
+body main .content form input[type="submit"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Submit button styling */
+body main .content form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Submit button hover effect */
+body main .content form input[type="submit"]:hover {
+    background-color: #444;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    /* Adjust padding for smaller screens */
+    body .header, 
+    body main .content, 
+    body .footer {
+        padding: 10px;
+    }
+
+    /* Adjust header title size for smaller screens */
+    body .header h1 {
+        font-size: 1.5em;
+    }
+
+    /* Adjust input field padding for smaller screens */
+    body main .content form input[type="text"], 
+    body main .content form input[type="email"], 
+    body main .content form input[type="submit"] {
+        padding: 5px;
+    }
+}
